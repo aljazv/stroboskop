@@ -14,11 +14,10 @@ window.addEventListener('load', function() {
 		
 	//Odstrani barve
 	var odstraniBarve = function(event){
-		var element = document.getElementById("barve");
-		element.parentNode.removeChild(element);
+		
+		document.querySelector("#barve").innerHTML = "";
 	}
-	document.querySelector("#odstraniBarve") 
-		.addEventListener('click', odstraniBarve);
+	document.querySelector("#odstraniBarve").addEventListener('click', odstraniBarve);
 	
 	
 	//Stroboskop
